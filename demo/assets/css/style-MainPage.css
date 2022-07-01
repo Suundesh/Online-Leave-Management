@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+hr {
+  border-top: 1px solid #e8eaee;
+  width: 100%;
+  margin-top: -2px;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 180px;
+  background: #182f63;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active {
+  width: 25rem;
+}
+
+.sidebar .logo-img {
+  height: 2rem;
+  width: 13rem;
+  /* align-items: center; */
+  margin-left: -22%;
+  /* margin-top: 8px; */
+}
+
+.sidebar .nav-links {
+  margin-top: 0.8rem;
+}
+
+.sidebar .nav-links li {
+  position: relative;
+  height: 3rem;
+  width: 100%;
+  list-style: none;
+}
+
+.sidebar .nav-links li a {
+  /* height: 100px;
+    width: 100%; */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li a:hover {
+  background: #85a4e2;
+}
+
+.sidebar .nav-links li i {
+  min-width: 60px;
+  text-align: center;
+  color: #e8eaee;
+  font-size: 20px;
+}
+
+.sidebar .nav-links li a .link_name {
+  color: #e8eaee;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.sidebar .nav-links .log_out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* home section */
+
+.home-section {
+  /* background: #e8eaee; */
+  position: relative;
+  min-height: 5vh;
+  width: calc(100% - 180px);
+  left: 180px;
+  transition: all 0.5s ease;
+}
+
+/* .sidebar.active ~ .home-section{
+    width: calc(100% - 60px);
+    left: 60px;
+  } */
+
+.home-section nav {
+  height: 3.5rem;
+  background: #fff;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.home-section nav .sidebar-button {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.home-section nav .sidebar-button i {
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+.home-section nav .profile-details {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  max-width: 200px;
+  background: #f5f6fa;
+  border: 2px solid #efeef1;
+  border-radius: 6px;
+  min-width: 160px;
+  padding: 0 15px 0 2px;
+}
+.home-section nav .profile-details .admin_name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 10px;
+  white-space: nowrap;
+  text-align: center;
+}
+.all-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+.card-edit { 
+  margin: 30px;
+  box-shadow: 0 7px 7px 0 gray;
+}
+
+.card-body{
+  text-align: center;
+}
+.card-img-top{
+  width: 80%;
+}
+.img-wrap {
+  background: #e9e9e9;
+  margin: 0;
+  text-align: center;
+}
+.card:hover{
+  transition: all 0.5s;
+  transform: scale(110%);
+  cursor: pointer;
+}
+.card-title strong{
+  color: navy;
+  }
